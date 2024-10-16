@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ED1E79, #662D8C);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .formRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .formGroup {
+            display: flex;
+            align-items: center;
+            width: 48%;
+        }
+
+        .formGroup label {
+            flex: 1;
+            margin-right: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .formGroup input {
+            flex: 2;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .genderGroup {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .genderGroup label {
+            flex: 1;
+            margin-right: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .btnGroup {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .btnGroup button {
+            width: 15%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cancelBtn {
+            background-color: #d9534f;
+            color: white;
+        }
+
+        .submitBtn {
+            background: linear-gradient(to bottom right, #ED1E79, #662D8C);
+            margin-left: 10px;
+            color: white;
+        }
+
+        .submitBtn:hover {
+            opacity: 0.8;
+        }
+
+        .cancelBtn:hover {
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <div>
+            <div class="formRow">
+                <div class="formGroup">
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="formGroup">
+                    <label>Username:</label>
+                    <input type="text" placeholder="Enter your username" required>
+                </div>
+            </div>
+            <div class="formRow">
+                <div class="formGroup">
+                    <label>Email:</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="formGroup">
+                    <label>Phone Number:</label>
+                    <input type="number" placeholder="Enter your number" required>
+                </div>
+            </div>
+            <div class="formRow">
+                <div class="formGroup">
+                    <label>Password:</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <div class="formGroup">
+                    <label>Confirm Password:</label>
+                    <input type="password" placeholder="Confirm your password" required>
+                </div>
+            </div>
+            <div class="genderGroup">
+                <label>Gender:</label>
+                <input type="radio" name="gender" required> Male
+                <input type="radio" name="gender" required> Female
+                <input type="radio" name="gender" required> Other
+            </div>
+            <div class="btnGroup">
+                <button type="button" class="cancelBtn">Cancel</button>
+                <button type="submit" class="submitBtn">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
